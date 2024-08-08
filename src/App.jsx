@@ -1,5 +1,4 @@
 import {
-  Nav,
   Hero,
   PopularProducts,
   SuperQuality,
@@ -9,6 +8,7 @@ import {
   Subscribe,
   Footer
 } from './sections/index.js'
+import Nav from './components/Nav.jsx'
 
 import './App.css'
 
