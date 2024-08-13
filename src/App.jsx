@@ -18,7 +18,7 @@ function App() {
     <main className="relative">
       <Nav/>
       <section className="padding-b
-        xl:padding-1
+        xl:padding-l
         wide:padding-r "
       >
         <Hero/>
