@@ -27,27 +27,32 @@ function App() {
       <section className='padding'>
         <PopularProducts/>
       </section>
+
       <section className='padding'>
         <SuperQuality/>
       </section>
+
       <section className='padding'>
         <Services/>
       </section>
+
       <section className='padding'>
         <SpecialOffers/>
       </section>
+
       <section className='bg-pale-blue padding'>
         <CustomerReviews/>
       </section>
+
       <section className='padding-x py-16 w-full
         sm:py-32'
       >
         <Subscribe/>
       </section>
+
       <section className='bg-black padding-x padding-t pb-8'>
         <Footer/>
       </section>
-
     </main>
   )
 }
