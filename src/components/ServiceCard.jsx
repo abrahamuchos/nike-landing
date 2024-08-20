@@ -11,7 +11,7 @@ export default function ServiceCard({ imgURL, subtext, label}) {
 
   return (
     <div className='flex-1 w-full rounded-[20px] shadow-3xl px-10 py-16
-      sm:w-[350px]'
+      sm:min-w-[350px]'
     >
       <div className='flex justify-center items-center rounded-full bg-coral-red w-11 h-11'>
         <img src={imgURL} alt={label} width={24} height={24} />
