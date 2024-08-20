@@ -13,10 +13,7 @@ export default function Button({label = 'Click Me', srcIcon}) {
       rounded-full leading-none border-coral-red'
     >
       {label}
-      {srcIcon ?
-        <img src={srcIcon} alt="icon-button" className='ml-2 rounded-full w-5 h-5 bg-white'/>
-        : ''
-      }
+      {srcIcon && <img src={srcIcon} alt="icon-button" className='ml-2 rounded-full w-5 h-5 bg-white'/>}
     </button>
   );
 }
