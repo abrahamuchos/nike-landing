@@ -1,12 +1,13 @@
 /**
  *
  * @param {string} label
+ * @param {string|undefined} className
  * @param {Object|string|null} srcIcon
  * @param {string} [variant=primary] - Variant can be "primary" or "secondary"
  * @return {JSX.Element}
  * @constructor
  */
-export default function Button({label = 'Click Me', srcIcon, variant = 'primary'}) {
+export default function Button({label = 'Click Me', srcIcon, variant = 'primary', className}) {
 
   const buttonStyles = {
     primary: 'bg-coral-red border-coral-red text-white',
@@ -15,7 +16,7 @@ export default function Button({label = 'Click Me', srcIcon, variant = 'primary'
 
   return (
     <button className={`flex justify-center items-center px-7 py-4 gap-2 font-montserrat text-lg border
-      rounded-full leading-none ${buttonStyles[variant] ?? buttonStyles['primary']}`}
+      rounded-full leading-none ${buttonStyles[variant] ?? buttonStyles['primary']} ${className}`}
     >
       {label}
       {srcIcon && <img src={srcIcon} alt="icon-button" className='ml-2 rounded-full w-5 h-5 bg-white'/>}
